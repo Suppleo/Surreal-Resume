@@ -1,0 +1,112 @@
+.room-view {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Back button styling */
+.back-button {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #4ecca3;
+  transform: translateX(-5px);
+}
+
+/* Room environment styling */
+.room-environment {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Room objects container */
+.room-objects {
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  max-height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Interactive object styling */
+.interactive-object {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  aspect-ratio: 1;
+  width: 140px;
+  height: 140px;
+  max-width: 90%;
+  max-height: 90%;
+  justify-self: center;
+  align-self: center;
+}
+
+.interactive-object:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #4ecca3;
+  transform: scale(1.05);
+}
+
+.object-placeholder {
+  font-size: 4rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Room-specific themes */
+.room-view-education {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+}
+
+.room-view-work-experience {
+  background: linear-gradient(135deg, #2c3e50 0%, #e74c3c 100%);
+}
+
+.room-view-projects {
+  background: linear-gradient(135deg, #2c3e50 0%, #9b59b6 100%);
+}
+
+.room-view-awards {
+  background: linear-gradient(135deg, #2c3e50 0%, #f1c40f 100%);
+}
+
+.room-view-technologies {
+  background: linear-gradient(135deg, #2c3e50 0%, #2ecc71 100%);
+}
+
+.room-view-leadership {
+  background: linear-gradient(135deg, #2c3e50 0%, #e67e22 100%);
+}
